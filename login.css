@@ -32,7 +32,7 @@
   background:
     linear-gradient(180deg, rgba(18,20,23,0.35) 0%, rgba(18,20,23,0.2) 40%, rgba(18,20,23,0.45) 100%),
     radial-gradient(circle at 20% 110%, rgba(22,163,74,0.25), transparent 55%),
-    url('/images/loginbg2.png') center/cover no-repeat;
+    url('images/loginbg2.png') center/cover no-repeat;
   border-right:1px solid var(--line);
   overflow:hidden;
 }
