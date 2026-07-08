@@ -14,7 +14,7 @@
 body{
   background:
     linear-gradient(180deg, rgba(18,20,23,0.75) 0%, rgba(18,20,23,0.6) 40%, rgba(18,20,23,0.85) 100%),
-    url('images/aboutbg.png') center/cover no-repeat fixed;
+    url('aboutbg.png') center/cover no-repeat fixed;
   color:var(--text);
   font-family:'Inter', sans-serif;
   line-height:1.7;
