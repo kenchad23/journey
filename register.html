@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JOURNEY — Register</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/login.css">
+
+</head>
+<body>
+
+  <section class="panel-left">
+    <div class="brand"><span class="dot"></span>JOURNEY</div>
+
+    <div class="hero">
+  <div class="eyebrow">New Member</div>
+  <h1 class="headline">Start your<br><span>JOURNEY</span><br>Today</h1>
+  <p class="sub">Create your account to start logging sessions, tracking sets, and building your program.</p>
+
+      <div class="tally" aria-hidden="true">
+        <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+        <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+      </div>
+      <div class="tally-label">This week's check-ins</div>
+    </div>
+
+    <div class="foot-note">© 2026 Journey Fitness Progress Tracker</div>
+  </section>
+
+  <section class="panel-right">
+    <div class="form-wrap">
+
+      <nav class="tabs">
+        <a href="index.html">Login</a>
+        <a href="#" class="active">Register</a>
+        <a href="about.html">About</a>
+      </nav>
+
+      <h2 class="form-title">Create account</h2>
+      <p class="form-desc">Enter your details to start your training log.</p>
+
+      <form action="#" method="POST">
+        <div class="field">
+          <label for="fullname">Full Name</label>
+          <div class="input-row">
+            <input type="text" id="fullname" name="fullname" placeholder="Jane Doe" autocomplete="name" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <div class="input-row">
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="username">Username</label>
+          <div class="input-row">
+            <input type="text" id="username" name="username" placeholder="janedoe" autocomplete="username" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="input-row">
+            <input type="password" id="password" name="password" placeholder="••••••••" autocomplete="new-password" required>
+            <button type="button" class="toggle-visibility" id="toggleBtn" aria-label="Show password">Show</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="confirm-password">Confirm Password</label>
+          <div class="input-row">
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="••••••••" autocomplete="new-password" required>
+            <button type="button" class="toggle-visibility" id="toggleBtn2" aria-label="Show password">Show</button>
+          </div>
+        </div>
+
+        <div class="row-between">
+          <label class="remember">
+            <input type="checkbox" id="terms" name="terms" required>
+            <span>I agree to the Terms &amp; Privacy Policy</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn-submit">Create Account</button>
+      </form>
+
+      <div class="divider">Already a member</div>
+
+      <p class="signup-note">Have an account? <a href="index.html">Log in</a></p>
+
+    </div>
+  </section>
+
+
+<script src="/js/register.js"></script>
+
+</body>
+</html>

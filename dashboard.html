@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Dashboard</title>
+  <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">🌿</div>
+      <div>
+        <div class="logo-title">FITNESS</div>
+        <div class="logo-sub">PROGRESS HUB</div>
+      </div>
+    </div>
+    <nav>
+      <a class="active"><span class="nav-icon">⊞</span> Dashboard</a>
+      <a><span class="nav-icon">◈</span> Programs</a>
+      <a><span class="nav-icon">⚡</span> Workouts</a>
+      <a><span class="nav-icon">📈</span> Progress</a>
+      <a><span class="nav-icon">🥗</span> Nutrition</a>
+      <a><span class="nav-icon">📅</span> Calendar</a>
+      <a><span class="nav-icon">🏅</span> Badges</a>
+      <a><span class="nav-icon">📊</span> Stats</a>
+      <a><span class="nav-icon">⚙</span> Settings</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <a class="nav-logout"><span class="nav-icon">→</span> Log out</a>
+      <button class="theme-btn">🌙</button>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+    <div class="main-header">
+      <div>
+        <h1>Dashboard</h1>
+        <p class="subtitle">Track your progress and become the best version of yourself.</p>
+      </div>
+      <div class="header-actions">
+        <div class="notif-btn">🔔 <span class="notif-dot"></span></div>
+      </div>
+    </div>
+
+    <!-- TOP CARDS -->
+    <div class="cards">
+      <div class="card">
+        <div class="card-top-row">
+          <h4>XP PROGRESS</h4>
+          <span class="card-icon">☆</span>
+        </div>
+        <h2 id="xpText">320 <span>/ 500 XP</span></h2>
+        <div class="progress-bar">
+          <div id="xpBar" style="width:64%"></div>
+        </div>
+        <small>180 XP to next level</small>
+      </div>
+
+      <div class="card">
+        <div class="card-top-row">
+          <h4>LEVEL</h4>
+          <span class="card-icon">↗</span>
+        </div>
+        <h2 id="level">1 <span class="green">Beginner</span></h2>
+        <small class="muted">Keep going!</small>
+      </div>
+
+      <div class="card">
+        <div class="card-top-row">
+          <h4>WORKOUTS</h4>
+          <span class="card-icon">⊕</span>
+        </div>
+        <h2>4</h2>
+        <small>This week</small>
+      </div>
+
+      <div class="card">
+        <div class="card-top-row">
+          <h4>STREAK</h4>
+          <span class="card-icon">🔥</span>
+        </div>
+        <h2 id="streak">5</h2>
+        <small>Days in a row</small>
+      </div>
+    </div>
+
+    <!-- PROGRAM + ACTIVITY -->
+    <div class="grid-2">
+      <div class="card large program-card">
+        <div class="program-header">
+          <h3>Active program</h3>
+          <a class="view-all green">View all</a>
+        </div>
+
+        <div class="program-body">
+          <img src="/images/lv30.png" alt="program" class="program-img">
+          <div class="program-info">
+            <div class="program-title-row">
+              <h2>Push / Pull / Legs</h2>
+              <span class="badge-pill green-pill">Beginner</span>
+            </div>
+            <p class="muted">⟳ 6 weeks program</p>
+            <p>Build strength and improve overall fitness with this balanced program.</p>
+            <div class="program-meta">
+              <span class="meta-item">📅 Workouts <strong>6 / 24</strong></span>
+              <span class="meta-item">⏱ Duration <strong>45 min</strong></span>
+              <span class="meta-item">⚠ Difficulty <strong>Beginner</strong></span>
+            </div>
+            <div class="progress-label-row">
+              <span class="muted">Progress</span>
+              <strong class="green">25%</strong>
+            </div>
+            <div class="progress-bar">
+              <div style="width:25%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card large">
+        <div class="program-header">
+          <h3>Recent activity</h3>
+          <a class="view-all green">View all</a>
+        </div>
+        <ul class="activity">
+          <li>
+            <div class="act-icon">⚡</div>
+            <div class="act-info">
+              <strong>Push Day</strong>
+              <small>Chest, Shoulders, Triceps</small>
+            </div>
+            <div class="act-right">
+              <span class="act-date muted">Oct 17</span>
+              <span class="green bold">+60 XP</span>
+            </div>
+          </li>
+          <li>
+            <div class="act-icon">⚡</div>
+            <div class="act-info">
+              <strong>Pull Day</strong>
+              <small>Back, Biceps</small>
+            </div>
+            <div class="act-right">
+              <span class="act-date muted">Oct 16</span>
+              <span class="green bold">+55 XP</span>
+            </div>
+          </li>
+          <li>
+            <div class="act-icon">⚡</div>
+            <div class="act-info">
+              <strong>Leg Day</strong>
+              <small>Legs, Calves</small>
+            </div>
+            <div class="act-right">
+              <span class="act-date muted">Oct 15</span>
+              <span class="green bold">+60 XP</span>
+            </div>
+          </li>
+          <li>
+            <div class="act-icon">⚡</div>
+            <div class="act-info">
+              <strong>Full Body</strong>
+              <small>Full Body</small>
+            </div>
+            <div class="act-right">
+              <span class="act-date muted">Oct 14</span>
+              <span class="green bold">+45 XP</span>
+            </div>
+          </li>
+        </ul>
+        <a class="view-full-log green">View full log →</a>
+      </div>
+    </div>
+
+    <!-- BADGE PROGRESS -->
+    <div class="card badge-card">
+      <div class="program-header">
+        <h3>Badge progress</h3>
+        <a class="view-all green">View all</a>
+      </div>
+      <div class="badges-grid">
+        <div class="badge-item">
+          <div class="badge-hex green-hex">💪</div>
+          <strong>First Steps</strong>
+          <small>Complete your first workout</small>
+          <span class="badge-done">✓</span>
+        </div>
+        <div class="badge-item">
+          <div class="badge-hex blue-hex">📅</div>
+          <strong>Consistent</strong>
+          <small>Work out 5 days in a row</small>
+          <span class="badge-done">✓</span>
+        </div>
+        <div class="badge-item">
+          <div class="badge-hex purple-hex">📊</div>
+          <strong>Dedicated</strong>
+          <small>Complete 10 workouts</small>
+          <div class="badge-progress">
+            <div class="progress-bar slim"><div style="width:70%"></div></div>
+            <small class="muted">7 / 10</small>
+          </div>
+        </div>
+        <div class="badge-item">
+          <div class="badge-hex orange-hex">🔥</div>
+          <strong>On Fire</strong>
+          <small>Maintain a 7 day streak</small>
+          <div class="badge-progress">
+            <div class="progress-bar slim"><div style="width:71%"></div></div>
+            <small class="muted">5 / 7</small>
+          </div>
+        </div>
+        <div class="badge-item locked">
+          <div class="badge-hex gray-hex">🔒</div>
+          <strong>Unstoppable</strong>
+          <small>Reach level 10</small>
+          <div class="badge-progress">
+            <div class="progress-bar slim"><div style="width:10%"></div></div>
+            <small class="muted">1 / 10</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUICK ACTIONS -->
+    <div class="card quick-actions-card">
+      <h3>Quick actions</h3>
+      <div class="quick-actions">
+        <button class="btn-primary" onclick="logWorkout()">+ Log workout</button>
+        <button class="btn-outline">↑ Update progress</button>
+        <button class="btn-outline">⊙ Track nutrition</button>
+        <button class="btn-outline">+ Create program</button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- RIGHT PANEL -->
+  <aside class="right">
+
+    <div class="card profile">
+      <h3>Your Profile</h3>
+      <div class="profile-img">
+        <div class="profile-glow"></div>
+        <img src="/images/lv30.png" alt="avatar">
+        <div class="level-badge">LEVEL 1</div>
+      </div>
+      <div class="profile-level">
+        <span class="level-title">Beginner</span>
+        <span id="profileXP">320 / 500 XP</span>
+      </div>
+      <div class="progress-bar">
+        <div id="profileBar" style="width:64%"></div>
+      </div>
+    </div>
+
+    <div class="card streak-card">
+      <h3>Streak</h3>
+      <div class="streak-top">
+        <h2 id="streakDisplay">5 🔥</h2>
+      </div>
+      <span class="streak-subtext">Days in a row</span>
+      <div class="week-streak">
+        <div class="day-group"><div class="circle active">✓</div><small>M</small></div>
+        <div class="day-group"><div class="circle active">✓</div><small>T</small></div>
+        <div class="day-group"><div class="circle active">✓</div><small>W</small></div>
+        <div class="day-group"><div class="circle active">✓</div><small>T</small></div>
+        <div class="day-group"><div class="circle active">✓</div><small>F</small></div>
+        <div class="day-group"><div class="circle"></div><small>S</small></div>
+        <div class="day-group"><div class="circle"></div><small>S</small></div>
+      </div>
+    </div>
+
+    <div class="card calendar-card">
+      <div class="calendar-header">
+        <h3>Workout calendar</h3>
+        <div class="calendar-nav">
+          <span id="calMonthYear">Oct 2024</span>
+          <button id="prevMonth">‹</button>
+          <button id="nextMonth">›</button>
+        </div>
+      </div>
+      <div class="calendar-days">
+        <span>M</span><span>T</span><span>W</span><span>T</span>
+        <span>F</span><span>S</span><span>S</span>
+      </div>
+      <div class="calendar-grid" id="calendarGrid"></div>
+    </div>
+
+    <!-- NUTRITION -->
+    <div class="card nutrition-card">
+      <div class="program-header">
+        <h3>Nutrition today</h3>
+        <a class="green">Edit</a>
+      </div>
+      <div class="nutrition-body">
+        <div class="nutrition-ring">
+          <svg viewBox="0 0 100 100" width="90" height="90">
+            <circle cx="50" cy="50" r="40" fill="none" stroke="#1e293b" stroke-width="10"/>
+            <circle cx="50" cy="50" r="40" fill="none" stroke="#22c55e" stroke-width="10"
+              stroke-dasharray="163 88" stroke-linecap="round"
+              transform="rotate(-90 50 50)"/>
+            <text x="50" y="46" text-anchor="middle" fill="#e5e7eb" font-size="14" font-weight="bold">1,650</text>
+            <text x="50" y="60" text-anchor="middle" fill="#94a3b8" font-size="9">/ 2,200 kcal</text>
+          </svg>
+        </div>
+        <div class="nutrition-macros">
+          <div class="macro-row">
+            <span>Protein</span>
+            <div class="macro-bar-wrap">
+              <div class="macro-bar protein" style="width:80%"></div>
+            </div>
+            <span class="muted">120 / 150g</span>
+          </div>
+          <div class="macro-row">
+            <span>Carbs</span>
+            <div class="macro-bar-wrap">
+              <div class="macro-bar carbs" style="width:72%"></div>
+            </div>
+            <span class="muted">180 / 250g</span>
+          </div>
+          <div class="macro-row">
+            <span>Fats</span>
+            <div class="macro-bar-wrap">
+              <div class="macro-bar fats" style="width:71%"></div>
+            </div>
+            <span class="muted">50 / 70g</span>
+          </div>
+        </div>
+      </div>
+      <a class="green view-nutrition-link">View nutrition →</a>
+    </div>
+
+  </aside>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Dashboard</title>
+  <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2>🔥 Fitness Hub</h2>
+    <nav>
+      <a class="active">Dashboard</a>
+      <a>Programs</a>
+      <a>Workouts</a>
+      <a>Progress</a>
+      <a>Nutrition</a>
+      <a>Calendar</a>
+      <a>Badges</a>
+      <a>Stats</a>
+      <a>Settings</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+    <h1>Dashboard</h1>
+    <p class="subtitle">Track your progress and become the best version of yourself.</p>
+
+    <!-- TOP CARDS -->
+    <div class="cards">
+      <div class="card">
+        <h4>XP Progress</h4>
+        <h2>320 <span>/ 500 XP</span></h2>
+        <div class="progress-bar">
+          <div id="xpBar" style="width:64%"></div>
+        </div>
+        <small>180 XP to next level</small>
+      </div>
+
+      <div class="card">
+        <h4>Level</h4>
+        <h2>1 <span class="green">Beginner</span></h2>
+      </div>
+
+      <div class="card">
+        <h4>Workouts</h4>
+        <h2>4</h2>
+        <small>This week</small>
+      </div>
+
+      <div class="card">
+        <h4>Streak</h4>
+        <h2>5</h2>
+        <small>Days in a row</small>
+      </div>
+    </div>
+
+    <!-- PROGRAM + ACTIVITY -->
+    <div class="grid-2">
+      <div class="card large">
+        <h3>Active program</h3>
+        <p class="green">Push / Pull / Legs</p>
+        <p>Build strength and improve overall fitness.</p>
+
+        <div class="progress-bar">
+          <div style="width:25%"></div>
+        </div>
+      </div>
+
+      <div class="card large">
+        <h3>Recent activity</h3>
+        <ul class="activity">
+          <li>Push Day <span>+60 XP</span></li>
+          <li>Pull Day <span>+55 XP</span></li>
+          <li>Leg Day <span>+60 XP</span></li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- RIGHT PANEL -->
+  <aside class="right">
+  <div class="card profile">
+  <h3>Your Profile</h3>
+
+  <div class="profile-img">
+  <div class="profile-glow"></div>
+  <img src="/images/lv30.png" alt="avatar">
+  <div class="level-badge">LEVEL 1</div>
+</div>
+
+  <div class="profile-level">
+    <span class="level-title">Beginner</span>
+    <span id="profileXP">0 / 500 XP</span>
+  </div>
+
+  <div class="progress-bar">
+    <div id="profileBar" style="width:0%"></div>
+  </div>
+</div>
+
+    <div class="card streak-card">
+  <h3>Streak</h3>
+
+  <div class="streak-top">
+  <h2>5 🔥</h2>
+</div>
+
+<span class="streak-subtext">Days in a row</span>
+
+  <div class="week-streak">
+
+    <div class="day-group">
+      <div class="circle active">✓</div>
+      <small>M</small>
+    </div>
+
+    <div class="day-group">
+      <div class="circle active">✓</div>
+      <small>T</small>
+    </div>
+
+    <div class="day-group">
+      <div class="circle active">✓</div>
+      <small>W</small>
+    </div>
+
+    <div class="day-group">
+      <div class="circle active">✓</div>
+      <small>T</small>
+    </div>
+
+    <div class="day-group">
+      <div class="circle active">✓</div>
+      <small>F</small>
+    </div>
+
+    <div class="day-group">
+      <div class="circle"></div>
+      <small>S</small>
+    </div>
+
+    <div class="day-group">
+      <div class="circle"></div>
+      <small>S</small>
+    </div>
+
+  </div>
+</div>
+
+<div class="card calendar-card">
+
+  <div class="calendar-header">
+    <h3>Workout calendar</h3>
+
+    <div class="calendar-nav">
+      <span>Oct 2024</span>
+      <button>‹</button>
+      <button>›</button>
+    </div>
+  </div>
+
+  <div class="calendar-days">
+    <span>M</span>
+    <span>T</span>
+    <span>W</span>
+    <span>T</span>
+    <span>F</span>
+    <span>S</span>
+    <span>S</span>
+  </div>
+
+  <div class="calendar-grid">
+
+    <!-- ROW 1 -->
+    <div class="inactive">30</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+
+    <!-- ROW 2 -->
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
+
+    <!-- ROW 3 -->
+    <div class="dot">14</div>
+    <div class="dot">15</div>
+    <div class="dot">16</div>
+
+    <div class="active-day">17</div>
+
+    <div class="dot">18</div>
+
+    <div>19</div>
+    <div>20</div>
+
+    <!-- ROW 4 -->
+    <div>21</div>
+    <div>22</div>
+    <div>23</div>
+    <div>24</div>
+    <div>25</div>
+    <div>26</div>
+    <div>27</div>
+
+    <!-- ROW 5 -->
+    <div>28</div>
+    <div>29</div>
+    <div>30</div>
+    <div>31</div>
+    <div class="inactive">1</div>
+    <div class="inactive">2</div>
+    <div class="inactive">3</div>
+
+  </div>
+</div>
+
+    <div class="card">
+      <h3>Nutrition</h3>
+      <p>1,650 / 2,200 kcal</p>
+    </div>
+  </aside>
+
+</div>
+
+<script src="/js/dashboard.js"></script>
+</body>
+</html>

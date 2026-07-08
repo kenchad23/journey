@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JOURNEY — Reset Password</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/login.css">
+
+</head>
+<body>
+
+  <section class="panel-left">
+    <div class="brand"><span class="dot"></span>JOURNEY</div>
+
+    <div class="hero">
+      <div class="eyebrow">Account Recovery</div>
+      <h1 class="headline">Lost your<br>way?<br><span>We'll get you back</span></h1>
+      <p class="sub">It happens. Enter your email and we'll send you a link to reset your password and get back to training.</p>
+
+      <div class="tally" aria-hidden="true">
+        <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+        <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+      </div>
+      <div class="tally-label">This week's check-ins</div>
+    </div>
+
+    <div class="foot-note">© 2026 Journey Fitness Progress Tracker</div>
+  </section>
+
+  <section class="panel-right">
+    <div class="form-wrap">
+
+      <nav class="tabs">
+        <a href="index.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="about.html">About</a>
+      </nav>
+
+      <h2 class="form-title">Reset password</h2>
+      <p class="form-desc">Enter the email linked to your account. We'll send a reset link.</p>
+
+      <form action="#" method="POST">
+        <div class="field">
+          <label for="email">Email</label>
+          <div class="input-row">
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-submit">Send Reset Link</button>
+      </form>
+
+      <div class="divider">Remembered it?</div>
+
+      <p class="signup-note">Back to <a href="index.html">Log in</a></p>
+
+    </div>
+  </section>
+
+<script src="/js/forgotpass.js"></script>
+
+</body>
+</html>
